@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daughtry Portfolio</title>
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav">
+            <div class="nav-title"><a href="index.html"><span class="red">RED</span>AUGHTRY.com</a></div>
+            <div class="nav-links">
+                <div class="nav-but" onclick="scrollToSection('about')">About</div>
+                <div class="nav-but" onclick="scrollToSection('work')">Work</div>
+                <div class="nav-but" onclick="scrollToSection('contact')">Contact</div>
+            </div>
+        </div>
+        <div class="row" style="width: 80vw; padding-top: 15vh;">
+            <div class="column" style="width: 35vw">
+                <img src="images/project_game/Daughtry,Ryan_Project_02.png" class="sidepage_image">
+            </div>
+            <div class="column" style="width: 45vw">
+                <p class="title_about">Forgotten</p>
+                <p class="about"></p>
+            </div>
+        </div>
+        
+        <div class="copyright">© 2024 Ryan Daughtry. All Rights Reserved.</div>
+        <script>
+            function scrollToSection(id) {
+                document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+    </body>
+</html>

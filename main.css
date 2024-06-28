@@ -56,7 +56,7 @@ a:active {
 a:link, a:visited {
     color: white;
     text-decoration: none;
-  }
+}
 
 .nav-but {
     font-size: 120%;
@@ -93,6 +93,30 @@ a:link, a:visited {
     text-align: center;
 }
 
+.title_about {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+.title_about::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+  
+.column:hover .title_about::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .title_work{
     color: white;
     font-size: 4vw;
@@ -100,17 +124,53 @@ a:link, a:visited {
     margin-bottom: 8px;
 }
 
+.title_work {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+  
+.title_work::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+  
+.column:hover .title_work::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .grid_img{
-    width:90%;
+    width:100%;
     margin-top: 30px;
     transition: transform 0.3s;
     animation: fadeIn 1.5s forwards;
+    --x: 21.555vw;
+    outline: calc(var(--x)/2) solid rgba(0, 0, 0, 0.50);
+    outline-offset: calc(var(--x)/-2);
+    cursor: pointer;
+    transition: .3s;
 }
 
 .grid_img:hover{
-    width:90%;
+    width:100%;
     transform: scale(1.05);
+    outline: 0px solid white;
+    outline-offset: 0px;
 }
+
+.grid_hyperlink{
+    width: 90%;
+}
+
 
 .row{
     max-width: fit-content;
@@ -132,6 +192,7 @@ a:link, a:visited {
     align-items: center;
     flex-wrap: nowrap;
     padding: 10px;
+    animation: fadeIn 2s;
 }
 
 .title_contact{
@@ -166,6 +227,9 @@ a:link, a:visited {
     width:7vw;
 }
 
+.sidepage_image {
+    width: 100%;
+}
 
 
 /********************Mobile*********************/
@@ -198,6 +262,21 @@ a:link, a:visited {
         font-size: 50px;
     }
 
+    .grid_img{
+        --x: 75vw;
+        outline: calc(var(--x)/2) solid rgba(0, 0, 0, 0.60);
+        outline-offset: calc(var(--x)/-2);
+        cursor: pointer;
+        transition: .3s;
+    }
+    
+    .grid_img:hover{
+        width:100%;
+        transform: scale(1.05);
+        outline: 0px solid white;
+        outline-offset: 0px;
+    }
+
     .title_contact{
         font-size: 40px;
     }
@@ -206,6 +285,10 @@ a:link, a:visited {
         color: white;
         font-size: 28px;
         text-align: center;
+    }
+
+    .sidepage_image{
+        width: 200%;
     }
 }
 
@@ -242,3 +325,4 @@ a:link, a:visited {
         background-position: 0% 50%;
     }
 }
+
