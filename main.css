@@ -10,6 +10,9 @@ body{
     background: linear-gradient(45deg, #ff416c, #ff4b2b, #ff416c, #ff4b2b);
     background-size: 400% 400%;
     animation: gradientBackground 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .nav {
@@ -80,7 +83,7 @@ a:link, a:visited {
     cursor: pointer;
 }
 
-.title_about{
+.title-about{
     color: white;
     font-size: 4vw;
     text-align: center;
@@ -93,13 +96,13 @@ a:link, a:visited {
     text-align: center;
 }
 
-.title_about {
+.title-about {
     display: inline-block;
     position: relative;
     color: white;
   }
   
-.title_about::after {
+.title-about::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -112,25 +115,30 @@ a:link, a:visited {
     transition: transform 0.3s ease-out;
 }
   
-.column:hover .title_about::after {
+.column:hover .title-about::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.title_work{
+.sidepage-column:hover .title-about::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.title-work{
     color: white;
     font-size: 4vw;
     text-align: center;
     margin-bottom: 8px;
 }
 
-.title_work {
+.title-work {
     display: inline-block;
     position: relative;
     color: white;
 }
   
-.title_work::after {
+.title-work::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -143,12 +151,12 @@ a:link, a:visited {
     transition: transform 0.3s ease-out;
 }
   
-.column:hover .title_work::after {
+.column:hover .title-work::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.grid_img{
+.grid-img{
     width:100%;
     margin-top: 30px;
     transition: transform 0.3s;
@@ -160,14 +168,14 @@ a:link, a:visited {
     transition: .3s;
 }
 
-.grid_img:hover{
+.grid-img:hover{
     width:100%;
     transform: scale(1.05);
     outline: 0px solid white;
     outline-offset: 0px;
 }
 
-.grid_hyperlink{
+.grid-hyperlink{
     width: 90%;
 }
 
@@ -195,7 +203,7 @@ a:link, a:visited {
     animation: fadeIn 2s;
 }
 
-.title_contact{
+.title-contact{
     color: white;
     font-size: 2.5vw;
     text-align: center;
@@ -216,6 +224,7 @@ a:link, a:visited {
     font-size: 30px;
     transition: .5s;
     padding: 10px;
+    margin-top: auto;
 }
 
 .linkedin{
@@ -227,8 +236,89 @@ a:link, a:visited {
     width:7vw;
 }
 
-.sidepage_image {
+.sidepage-image {
     width: 100%;
+    padding-bottom: 40px;
+}
+
+.sidepage-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    animation: fadeIn 2s;
+    width: 45vw
+}
+
+.slide-button {
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 20px;
+    outline: solid;
+    outline-width: 3px;
+    outline-color: white;
+    padding: 10px 20px;
+}
+
+.slide-button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.title-section{
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.section{
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 8px;
+    margin-bottom: 100px;
+}
+
+.title-section {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+.title-section::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+  
+.column:hover .title-section::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.sidepage-column:hover .title-section::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 
@@ -248,7 +338,7 @@ a:link, a:visited {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
-    .title_about{
+    .title-about{
         font-size: 50px;
     }
 
@@ -258,11 +348,11 @@ a:link, a:visited {
         text-align: center;
     }
 
-    .title_work{
+    .title-work{
         font-size: 50px;
     }
 
-    .grid_img{
+    .grid-img{
         --x: 75vw;
         outline: calc(var(--x)/2) solid rgba(0, 0, 0, 0.60);
         outline-offset: calc(var(--x)/-2);
@@ -270,14 +360,14 @@ a:link, a:visited {
         transition: .3s;
     }
     
-    .grid_img:hover{
+    .grid-img:hover{
         width:100%;
         transform: scale(1.05);
         outline: 0px solid white;
         outline-offset: 0px;
     }
 
-    .title_contact{
+    .title-contact{
         font-size: 40px;
     }
 
@@ -287,8 +377,22 @@ a:link, a:visited {
         text-align: center;
     }
 
-    .sidepage_image{
+    .sidepage-image{
         width: 200%;
+        padding-bottom: 0px;
+    }
+
+    .sidepage-column {
+        width: 65vw;
+    }
+    
+    .title-section {
+        font-size: 50px;
+    }
+
+    .section {
+        font-size: 20px;
+        margin: 0px;
     }
 }
 
@@ -325,4 +429,3 @@ a:link, a:visited {
         background-position: 0% 50%;
     }
 }
-
