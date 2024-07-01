@@ -322,11 +322,42 @@ a:link, a:visited {
     transform-origin: bottom left;
 }
 
+.gamevideo {
+    padding-bottom: 7.65vw; 
+    padding-top: 7.65vw;
+}
+
 .clockvideo {
     padding-bottom: 8.2vw; 
     padding-top: 8.2vw;
 }
 
+.video {
+    height: 480px;
+    width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(28, 28, 28); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000000; 
+  }
 
 /********************Mobile*********************/
 
@@ -401,6 +432,11 @@ a:link, a:visited {
         font-size: 20px;
         margin: 0px;
         margin-bottom: 40px;
+    }
+
+    .video {
+        height: 160px;
+        width: 100%;
     }
 }
 

@@ -22,17 +22,7 @@
     </div>
     <div class="row" style="width: 80vw; padding-top: 15vh; justify-content: center;">
         <div style="width: 35vw;">
-            <div class="w3-display-container mySlides">
-                <img src="images/project_game/Daughtry,Ryan_Project_02.png" style="width:100%">
-            </div>
-
-            <div class="w3-display-container mySlides">
-                <img src="images/project_game/Daughtry,Ryan_Project_03.png" style="width:100%">
-            </div>
-            <div style="display: flex; flex-direction: row; justify-content: center;">
-                <button class="slide-button" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="slide-button" onclick="plusDivs(1)">&#10095;</button>
-            </div>
+            <iframe class="video" src="https://drive.google.com/file/d/1VINtZpBGSzk_zyFmUvxFk4eGIlh5HWPx/preview" allowfullscreen frameBorder="0"></iframe>
         </div>
         <div class="sidepage-column">
             <p class="title-section">Burnin' For You</p>
@@ -48,24 +38,6 @@
     <script>
         function scrollToSection(id) {
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
         }
     </script>
 </body>
