@@ -2,44 +2,194 @@
 <html>
 
 <head>
-    <title>Daughtry Portfolio</title>
+    <title>Project - Lyric Video</title>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/hai0fhn.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="nav">
-        <div class="nav-title"><a href="index.html"><span class="red">RED</span>AUGHTRY.com</a></div>
+        <div class="nav-title">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo">
+                <img src="images/logo-alt.png" class="logo-alt">
+            </a>
+            <div class="nav-divider"></div>
+            <p class="nav-location">Lyric Video</p>
+            <p class="nav-message">Graphic & Web Designer</p>
+        </div>
         <div class="nav-links">
+            <a class="nav-but" href="index.html#work">Portfolio</a>
+            <a class="nav-but" href="index.html#skills">Skills</a>
             <a class="nav-but" href="index.html#about">About</a>
-            <a class="nav-but" href="index.html#work">Work</a>
-            <a class="nav-but" href="index.html#contact">Contact</a>
+            <a class="nav-but" href="contact.html" style="margin-right: 15px;">Contact</a>
+            <div class="nav-divider divider-social"></div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+                <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                    <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                </a>
+                <a href="https://www.instagram.com/daughtryweb/" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                    <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="row" style="width: 80vw; padding-top: 15vh; justify-content: center;">
-        <div style="width: 35vw;">
-            <iframe class="video" src="https://drive.google.com/file/d/1VINtZpBGSzk_zyFmUvxFk4eGIlh5HWPx/preview" allowfullscreen frameBorder="0"></iframe>
-        </div>
-        <div class="sidepage-column">
-            <p class="title-section">Burnin' For You</p>
-            <p class="section">Originally starting out as a simple project where we were supposed to design an album
-                cover for a song. The song I chose was ‘Burnin for you’ by Blue Oyster Cult which I used the meaning
-                behind the lyrics to the song for my inspiration in my initial design. After creating the product
-                however, I felt a need to create a continuation to the design and thus created a lyric video in after
-                effects as a simple album design didn’t feel enough.</p>
+        <div class="mobile-menu" onclick="toggleMenu()">
+            ☰
         </div>
     </div>
 
-    <div class="copyright">© 2024 Ryan Daughtry. All Rights Reserved.</div>
+    <div class="row row-sidepage">
+        <div class="sidepage-media">
+            <div class="mySlides">
+                <video style="width:100%" muted playsinline loop alt="Preview of lyric video.">
+                    <source src="images/project_lyric_video/video_preview.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="mySlides">
+                <iframe class="video" src="https://drive.google.com/file/d/1VINtZpBGSzk_zyFmUvxFk4eGIlh5HWPx/preview" allowfullscreen frameBorder="0" style="aspect-ratio: 16 / 9; height: 100%; width: 100%;" alt="Video of lyric video where hands are reaching out towards a clock with fishnet legs for clock hands. Fire is burning in the background.">
+                    Your browser does not support the video tag.
+                </iframe>
+            </div>
+
+            <div id="slide-caption" class="slide-caption">
+                <p>Lyric Video Preview</p>
+                <p>Full Lyric Video</p>
+            </div>
+
+            <div style="display: flex; flex-direction: row; justify-content: center;">
+                <button class="slide-button" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="slide-button" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentDiv(1)"></span>
+                <span class="dot" onclick="currentDiv(2)"></span>
+            </div>
+        </div>
+
+        <div class="sidepage-column">
+            <p class="title-section">Burnin' For You</p>
+            <p class="subtitle">2021 | Graphic Design, Motion Graphics | Tools: Photoshop, After Effects</p>
+            <p class="section">For this project, I selected the song “Burnin’ for You” by Blue Öyster Cult as the basis for an album cover design. Drawing from the lyrical themes, I developed a visual concept that reflected the song’s meaning. The design of a clock with legs was incorporated to symbolize the interplay of desire and the passage of time, inspired by the lyrics’ themes of enduring passion. After completing the cover, I expanded the project into a lyric video created in After Effects, extending the design into motion and exploring how the visuals could enhance the listening experience.</p>
+        </div>
+    </div>
+
+    <div class="footer no-hover">
+        <div class="footer-column">
+            <p class="footer-title">Contact Me</p>
+            <p class="footer-text">804-944-4777</p>
+            <p class="footer-text email">redaughtry@verizon.net</p>
+            <div class="footer-row">
+                <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin" style="margin: 1px;">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+                <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                    <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                </a>
+                <a href="C:\Users\redau\OneDrive\Desktop\portfolio\index.html" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                    <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">Location</p>
+            <p class="footer-text">Richmond, VA 23227</p>
+            <p class="footer-text">Available for remote work</p>
+            <p class="footer-text">Open to relocation</p>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">Quick Links</p>
+            <p class="footer-text"><a href="index.html#work">Portfolio</a></p>
+            <p class="footer-text"><a href="index.html#skills">Skills</a></p>
+            <p class="footer-text"><a href="index.html#about">About</a></p>
+            <p class="footer-text"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
     <script>
         function scrollToSection(id) {
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
         }
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            var captions = document.getElementById("slide-caption").getElementsByTagName("p");
+
+            // wrap around if out of bounds
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+
+            // hide all slides & pause videos
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+
+                let vid = slides[i].querySelector("video");
+                if (vid) {
+                    vid.pause();
+                    vid.currentTime = 0; // reset
+                }
+
+                let iframe = slides[i].querySelector("iframe");
+                if (iframe) {
+                    const src = iframe.src;
+                    iframe.src = "";   // clear it to stop loading/playback
+                    iframe.src = src;  // reassign it to reset
+                }
+
+                // hide all captions
+                if (captions[i]) captions[i].style.display = "none";
+            }
+
+            // remove active dot styling
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active-dot");
+            }
+
+            // show current slide
+            slides[slideIndex - 1].style.display = "block";
+
+            // show caption for current slide
+            if (captions[slideIndex - 1]) captions[slideIndex - 1].style.display = "block";
+
+            // activate corresponding dot
+            if (dots.length > 0) {
+                dots[slideIndex - 1].classList.add("active-dot");
+            }
+
+            // play video if the visible slide has one
+            let currentVid = slides[slideIndex - 1].querySelector("video");
+            if (currentVid) {
+                currentVid.play();
+            }
+        }
+
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        }
     </script>
+
 </body>
 
 </html>

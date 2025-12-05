@@ -2,59 +2,121 @@
 <html>
 
 <head>
-    <title>Daughtry Portfolio</title>
+    <title>Project - Clock</title>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/hai0fhn.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="nav">
-        <div class="nav-title"><a href="index.html"><span class="red">RED</span>AUGHTRY.com</a></div>
+        <div class="nav-title">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo">
+                <img src="images/logo-alt.png" class="logo-alt">
+            </a>
+            <div class="nav-divider"></div>
+            <p class="nav-location">Clock</p>
+            <p class="nav-message">Graphic & Web Designer</p>
+        </div>
         <div class="nav-links">
+            <a class="nav-but" href="index.html#work">Portfolio</a>
+            <a class="nav-but" href="index.html#skills">Skills</a>
             <a class="nav-but" href="index.html#about">About</a>
-            <a class="nav-but" href="index.html#work">Work</a>
-            <a class="nav-but" href="index.html#contact">Contact</a>
+            <a class="nav-but" href="contact.html" style="margin-right: 15px;">Contact</a>
+            <div class="nav-divider divider-social"></div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+                <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                    <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                </a>
+                <a href="https://www.instagram.com/daughtryweb/" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                    <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
+        <div class="mobile-menu" onclick="toggleMenu()">
+            ☰
         </div>
     </div>
-    <div class="row" style="width: 80vw; padding-top: 15vh; justify-content: center;">
-        <div style="width: 35vw;">
+
+    <div class="row row-sidepage">
+        <div class="sidepage-media">
             <div class="mySlides">
-                <img src="images/project_clock/clock_thumbnail.png" style="width:100%">
+                <img src="images/project_clock/clock_thumbnail.png" style="width:100%" alt="Top view of clock.">
             </div>
 
             <div class="mySlides">
-                <img src="images/project_clock/clock2.png" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/project_clock/clock3.png" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <video class="clockvideo" width="100%" controls>
+                <video class="clockvideo" style="width:100%" muted playsinline loop alt="Video of clock's gears potential rotation.">
                     <source src="images/project_clock/Blender_ [D__animation.blend] 2023-02-21 00-43-09.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
+
+            <div class="mySlides">
+                <img src="images/project_clock/clock2.png" style="width:100%" alt="Angled top viw of clock.">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/project_clock/clock3.png" style="width:100%" alt="Dimetric view of clock.">
+            </div>
+
             <div style="display: flex; flex-direction: row; justify-content: center;">
                 <button class="slide-button" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="slide-button" onclick="plusDivs(1)">&#10095;</button>
             </div>
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentDiv(1)"></span>
+                <span class="dot" onclick="currentDiv(2)"></span>
+                <span class="dot" onclick="currentDiv(3)"></span>
+                <span class="dot" onclick="currentDiv(4)"></span>
+            </div>
         </div>
         <div class="sidepage-column">
             <p class="title-section">Clock</p>
-            <p class="section">A clock that requires constant cranking to accurately tell the time. Essentially, you
-                must spend all your time to know what the time is. Created in Blender, with the intent to be 3D printed
-                however every attempt has resulted in the print being messed up with only parts of it being fully
-                completed. Because it couldn’t be printed, an animation was then created to at least display how it
-                might work.</p>
+            <p class="subtitle">2023 | 3D Modeling, Conceptual Design & Animation | Tools: Blender, Animation</p>
+            <p class="section">This project explores time as a resource through a clock that requires constant cranking to function, meaning you must spend all your time to know the time. Created during my first experience using Blender, I modeled the clock with the intent to 3D print it. While the prints were only partially successful, I produced an animation to fully illustrate how the mechanism would operate. The project demonstrates both conceptual design and my ability to learn and apply new 3D modeling tools.</p>
         </div>
     </div>
 
-    <div class="copyright">© 2024 Ryan Daughtry. All Rights Reserved.</div>
+    <div class="footer no-hover">
+        <div class="footer-column">
+            <p class="footer-title">Contact Me</p>
+            <p class="footer-text">804-944-4777</p>
+            <p class="footer-text email">redaughtry@verizon.net</p>
+            <div class="footer-row">
+                <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin" style="margin: 1px;">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+                <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                    <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                </a>
+                <a href="C:\Users\redau\OneDrive\Desktop\portfolio\index.html" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                    <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">Location</p>
+            <p class="footer-text">Richmond, VA 23227</p>
+            <p class="footer-text">Available for remote work</p>
+            <p class="footer-text">Open to relocation</p>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">Quick Links</p>
+            <p class="footer-text"><a href="index.html#work">Portfolio</a></p>
+            <p class="footer-text"><a href="index.html#skills">Skills</a></p>
+            <p class="footer-text"><a href="index.html#about">About</a></p>
+            <p class="footer-text"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
     <script>
         function scrollToSection(id) {
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
@@ -67,15 +129,52 @@
             showDivs(slideIndex += n);
         }
 
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
         function showDivs(n) {
             var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            // wrap around if out of bounds
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+
+            // hide all slides & pause videos
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+
+                let vid = slides[i].querySelector("video");
+                if (vid) {
+                    vid.pause();
+                    vid.currentTime = 0; // reset
+                }
             }
-            x[slideIndex - 1].style.display = "block";
+
+            // remove active dot styling
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active-dot");
+            }
+
+            // show current slide
+            slides[slideIndex - 1].style.display = "block";
+
+            // activate corresponding dot
+            if (dots.length > 0) {
+                dots[slideIndex - 1].classList.add("active-dot");
+            }
+
+            // play video if the visible slide has one
+            let currentVid = slides[slideIndex - 1].querySelector("video");
+            if (currentVid) {
+                currentVid.play();
+            }
+        }
+
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('open');
         }
     </script>
 </body>

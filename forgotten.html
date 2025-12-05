@@ -2,121 +2,165 @@
 <html>
 
 <head>
-    <title>Daughtry Portfolio</title>
+    <title>Project - Forgotten</title>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/hai0fhn.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="nav">
-        <div class="nav-title"><a href="index.html"><span class="red">RED</span>AUGHTRY.com</a></div>
+        <div class="nav-title">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo">
+                <img src="images/logo-alt.png" class="logo-alt">
+            </a>
+            <div class="nav-divider"></div>
+            <p class="nav-location">Forgotten</p>
+            <p class="nav-message">Graphic & Web Designer</p>
+        </div>
         <div class="nav-links">
+            <a class="nav-but" href="index.html#work">Portfolio</a>
+            <a class="nav-but" href="index.html#skills">Skills</a>
             <a class="nav-but" href="index.html#about">About</a>
-            <a class="nav-but" href="index.html#work">Work</a>
-            <a class="nav-but" href="index.html#contact">Contact</a>
+            <a class="nav-but" href="contact.html" style="margin-right: 15px;">Contact</a>
+            <div class="nav-divider divider-social"></div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+                <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                    <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                </a>
+                <a href="https://www.instagram.com/daughtryweb/" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                    <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
+        <div class="mobile-menu" onclick="toggleMenu()">
+            ☰
         </div>
     </div>
-    <div class="row" style="width: 80vw; padding-top: 15vh; justify-content: center;">
-        <div style="width: 35vw;">
+
+    <div class="row row-sidepage">
+        <div class="sidepage-media">
             <div class="mySlides">
-                <video class="gamevideo" width="100%" controls>
+                <img src="images/project_game/game4.png" style="width:100%" alt="Title screen of the game, Forgotten.">
+            </div>
+
+            <div class="mySlides">
+                <video class="gamevideo" width="100%" controls alt="Trailer video for the game.">
                     <source src="images/project_game/gametrailer.mp4" type="video/mp4">
                 </video>
             </div>
 
             <div class="mySlides">
-                <img src="images/project_game/game1.png" style="width:100%">
+                <img src="images/project_game/game1.png" style="width:100%" alt="Map layout ideas.">
             </div>
 
             <div class="mySlides">
-                <img src="images/project_game/game2.png" style="width:100%">
+                <img src="images/project_game/game2.png" style="width:100%" alt="Grid-like structure for level design example.">
             </div>
 
             <div class="mySlides">
-                <img src="images/project_game/game3.png" style="width:100%">
+                <img src="images/project_game/game3.png" style="width:100%; background-color: grey;" alt="Iterations of the main character.">
             </div>
 
             <div class="mySlides">
-                <img src="images/project_game/game4.png" style="width:100%">
+                <img src="images/project_game/game5.png" style="width:100%" alt="Abandoned Mines level example.">
             </div>
 
             <div class="mySlides">
-                <img src="images/project_game/game5.png" style="width:100%">
+                <img src="images/project_game/game6.png" style="width:100%" alt="Froxen Castle level example.">
             </div>
 
             <div class="mySlides">
-                <img src="images/project_game/game6.png" style="width:100%">
+                <img src="images/project_game/game7.png" style="width:100%" alt="Monsterous shop keeper character sprite chart.">
             </div>
 
             <div class="mySlides">
-                <img src="images/project_game/game7.png" style="width:100%">
+                <img src="images/project_game/game8.png" style="width:100%" alt="Sprite chart for barn owl character.">
             </div>
 
-            <div class="mySlides">
-                <img src="images/project_game/game8.png" style="width:100%">
+            <div id="slide-caption" class="slide-caption">
+                <p>Title Screen</p>
+                <p>Game Trailer</p>
+                <p>Map Layout Ideas</p>
+                <p>Tileset Functionality</p>
+                <p>Main Character Iterations</p>
+                <p>Abandoned Mines Location</p>
+                <p>Frozen Castle Location</p>
+                <p>Shop Keeper Sprite Chart</p>
+                <p>Frozen Castle's Library Owl Sprite Chart</p>
             </div>
+
             <div style="display: flex; flex-direction: row; justify-content: center;">
                 <button class="slide-button" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="slide-button" onclick="plusDivs(1)">&#10095;</button>
             </div>
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentDiv(1)"></span>
+                <span class="dot" onclick="currentDiv(2)"></span>
+                <span class="dot" onclick="currentDiv(3)"></span>
+                <span class="dot" onclick="currentDiv(4)"></span>
+                <span class="dot" onclick="currentDiv(5)"></span>
+                <span class="dot" onclick="currentDiv(6)"></span>
+                <span class="dot" onclick="currentDiv(7)"></span>
+                <span class="dot" onclick="currentDiv(8)"></span>
+                <span class="dot" onclick="currentDiv(9)"></span>
+            </div>
         </div>
         <div class="sidepage-column">
             <p class="title-section">Forgotten</p>
-            <p class="section" style="overflow-y:scroll; max-height: 80vh;">For my senior thesis project that took place
-                for the last four months of my senior year, I decided to create my own video game with the intent of it
-                being created in unity eventually. I decided on what type of game I wanted to make, that being a 2D
-                platformer focusing on storytelling with games such as Celeste and Hollow Knight being my main source of
-                inspiration. The first thing I did was map out my ideas on a potential world map layout with ideas
-                sorted by location which was eventually cleaned up for iteration #2. The next issue I figured out was
-                sizing for all of the art as I wanted to make sure it was scalable to multiple aspect ratios mainly
-                being 1920x1080p. I decided to make the map 1/6th scale with tiles being 8x8 pixels. Character creation
-                was then the main focal point once I had gotten the sizing down with multiple iterations being created
-                for each one as shown in the image of my main character which was based on a wendigo. I then created a
-                plot surrounding the map and characters I created based on the main character who has lost their
-                memories and must look to restore it through collectibles called memory shards. The map and character
-                interactions would then change based on how many shards have been collected with the character
-                eventually remembering its name at the end of the game, something the player chooses. Dialogue trees
-                were then created with different interactions leading to different outcomes each labeled on a
-                spreadsheet. Level designs and backgrounds were the final piece created as levels were originally
-                created in a single color to create what would be a collision barrier so the character can walk and be
-                blocked by walls. It was then filled in with sprites textures based on the location of each block. I
-                also had researched how the backgrounds of other games are created through the use of parallax
-                backgrounds with multiple layers moving at different speeds. I added my own version of it to my game as
-                seen in the video. Overtime, multiple ideas have been added as well as scrapped, even full characters
-                which had been partially animated were never added to the final video. I still believe this project is a
-                work in progress even though it has already been turned in as it is something I am continuing to work on
-                my own.
+            <p class="subtitle">2024 | Game Design & Development | Tools: Photoshop, Adobe Animate</p>
+            <p class="section" style="margin-bottom: 10px;">For my senior thesis, completed over the last four months of my senior year, I designed and developed a 2D storytelling platformer with the goal of eventually creating it in Unity. Inspired by Celeste and Hollow Knight, I began by mapping out the world, organizing ideas by location, and iterating on the layout to refine the map.
+I researched game creation techniques, including scalable tile systems, collision mapping, and parallax backgrounds, to guide both level and background design. The game uses an 8x8 pixel tile system, ensuring compatibility across resolutions.</p> 
+            <p class="section" style="margin-bottom: 10px;">Character creation was a major focus, with multiple iterations for each design—including the main character, based on a wendigo.
+The plot centers on collectible “memory shards” that influence character interactions, branching dialogue, and story outcomes. Levels were initially created as collision maps and then filled with textures and sprites, with layered parallax backgrounds to add depth. To showcase the game, I created a short teaser trailer with animations highlighting characters, environments, and mechanics.</p>
+            <p class="section">Throughout development, multiple ideas, levels, and characters were iterated, refined, or removed, demonstrating my process of prototyping and adaptation. While submitted, the project remains a work in progress, reflecting my ongoing exploration of game design, storytelling, and interactive mechanics.
+
             </p>
         </div>
     </div>
 
-    <div class="copyright">© 2024 Ryan Daughtry. All Rights Reserved.</div>
-    <script>
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
+    <div class="footer no-hover">
+        <div class="footer-column">
+            <p class="footer-title">Contact Me</p>
+            <p class="footer-text">804-944-4777</p>
+            <p class="footer-text email">redaughtry@verizon.net</p>
+            <div class="footer-row">
+                <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin" style="margin: 1px;">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+                <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                    <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                </a>
+                <a href="C:\Users\redau\OneDrive\Desktop\portfolio\index.html" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                    <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">Location</p>
+            <p class="footer-text">Richmond, VA 23227</p>
+            <p class="footer-text">Available for remote work</p>
+            <p class="footer-text">Open to relocation</p>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">Quick Links</p>
+            <p class="footer-text"><a href="index.html#work">Portfolio</a></p>
+            <p class="footer-text"><a href="index.html#skills">Skills</a></p>
+            <p class="footer-text"><a href="index.html#about">About</a></p>
+            <p class="footer-text"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+    <script src="main.js">
 
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
     </script>
 </body>
 

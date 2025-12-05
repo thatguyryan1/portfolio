@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project - CN Classics</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/hai0fhn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-title">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo">
+                <img src="images/logo-alt.png" class="logo-alt">
+            </a>
+            <div class="nav-divider"></div>
+            <p class="nav-location">CN Classics</p>
+            <p class="nav-message">Graphic & Web Designer</p>
+        </div>
+        <div class="nav-links">
+            <a class="nav-but" href="index.html#work">Portfolio</a>
+            <a class="nav-but" href="index.html#skills">Skills</a>
+            <a class="nav-but" href="index.html#about">About</a>
+            <a class="nav-but" href="contact.html" style="margin-right: 15px;">Contact</a>
+            <div class="nav-divider divider-social"></div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+                <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                    <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                </a>
+                <a href="https://www.instagram.com/daughtryweb/" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                    <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
+        <div class="mobile-menu" onclick="toggleMenu()">
+            ☰
+        </div>
+    </div>
+
+    <div class="row row-sidepage">
+        <div class="sidepage-media">
+            <div class="mySlides">
+                <img src="images/project_vhs/vhs1.png" style="width:100%" alt="Checkered pattern used for front page of book.">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/project_vhs/vhs2.png" style="width:100%" alt="Dexter's Lab page with background based on the main character.">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/project_vhs/vhs3.png" style="width:100%" alt="Johnny Bravo page with background based on the main character.">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/project_vhs/vhs4.png" style="width:100%" alt="Courage the Cowardly Dog page with background based on the main character.">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/project_vhs/vhs5.png" style="width:100%" alt="Front view of custom vhs box of cartoon network characters.">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/project_vhs/vhs6.png" style="width:100%" alt="Back view of vhs box.">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/project_vhs/vhs_thumbnail.png" style="width:100%" alt="Image of fake video ad.">
+            </div>
+
+            <div class="mySlides">
+                <iframe class="video cn-video" src="https://drive.google.com/file/d/1c53loabbdk8LPivZK-tGeM7aq1rE77s3/preview"allowfullscreen frameBorder="0" alt="Video ad for the fake vhs tape.">
+                    Your browser does not support the video tag.
+                </iframe>
+            </div>
+
+            <div id="slide-caption" class="slide-caption">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p>Promotional Trailer Concept</p>
+            </div>
+
+            <div style="display: flex; flex-direction: row; justify-content: center;">
+                <button class="slide-button" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="slide-button" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentDiv(1)"></span>
+                <span class="dot" onclick="currentDiv(2)"></span>
+                <span class="dot" onclick="currentDiv(3)"></span>
+                <span class="dot" onclick="currentDiv(4)"></span>
+                <span class="dot" onclick="currentDiv(5)"></span>
+                <span class="dot" onclick="currentDiv(6)"></span>
+                <span class="dot" onclick="currentDiv(7)"></span>
+                <span class="dot" onclick="currentDiv(8)"></span>
+            </div>
+        </div>
+        <div class="sidepage-column">
+            <p class="title-section">CN Classics</p>
+            <p class="subtitle">2023 | Book Design, VHS Product & Advertisement | Tools: InDesign, Photoshop, Premiere Pro</p>
+            <p class="section">This project explored nostalgia through my childhood love of Cartoon Network. I investigated what made these cartoons different from modern shows, focusing on their use of cell animation, which I documented in a book detailing Cartoon Network’s history.
+I then created a product presenting these cartoons in a VHS format, designing a custom box and producing an accompanying advertisement. Transferring the ad from computer to tape was challenging, requiring research and specific wiring to preserve quality. To enhance authenticity, I added era-accurate tape imperfections and visual distortions, letting viewers experience the cartoons as they would have been watched during that era.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="footer no-hover">
+        <div class="footer-column">
+            <p class="footer-title">Contact Me</p>
+            <p class="footer-text">804-944-4777</p>
+            <p class="footer-text email">redaughtry@verizon.net</p>
+            <div class="footer-row">
+                <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin" style="margin: 1px;">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+                <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                    <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                </a>
+                <a href="C:\Users\redau\OneDrive\Desktop\portfolio\index.html" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                    <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">Location</p>
+            <p class="footer-text">Richmond, VA 23227</p>
+            <p class="footer-text">Available for remote work</p>
+            <p class="footer-text">Open to relocation</p>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">Quick Links</p>
+            <p class="footer-text"><a href="index.html#work">Portfolio</a></p>
+            <p class="footer-text"><a href="index.html#skills">Skills</a></p>
+            <p class="footer-text"><a href="index.html#about">About</a></p>
+            <p class="footer-text"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>

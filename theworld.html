@@ -2,64 +2,123 @@
 <html>
 
 <head>
-    <title>Daughtry Portfolio</title>
+    <title>Project - The World</title>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/hai0fhn.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="nav">
-        <div class="nav-title"><a href="index.html"><span class="red">RED</span>AUGHTRY.com</a></div>
+        <div class="nav-title">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo">
+                <img src="images/logo-alt.png" class="logo-alt">
+            </a>
+            <div class="nav-divider"></div>
+            <p class="nav-location">The World</p>
+            <p class="nav-message">Graphic & Web Designer</p>
+        </div>
         <div class="nav-links">
+            <a class="nav-but" href="index.html#work">Portfolio</a>
+            <a class="nav-but" href="index.html#skills">Skills</a>
             <a class="nav-but" href="index.html#about">About</a>
-            <a class="nav-but" href="index.html#work">Work</a>
-            <a class="nav-but" href="index.html#contact">Contact</a>
+            <a class="nav-but" href="contact.html" style="margin-right: 15px;">Contact</a>
+            <div class="nav-divider divider-social"></div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+                <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                    <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                </a>
+                <a href="https://www.instagram.com/daughtryweb/" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                    <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
+        <div class="mobile-menu" onclick="toggleMenu()">
+            ☰
         </div>
     </div>
-    <div class="row" style="width: 80vw; padding-top: 15vh; justify-content: center;">
-        <div style="width: 35vw;">
+        
+    <div class="row row-sidepage">
+        <div class="sidepage-media">
             <div class="mySlides">
-                <img src="images/project_500_book/book_thumbnail.png" style="width:100%">
+                <img src="images/project_500_book/book_thumbnail.png" style="width:100%" alt="Front page book which includes images of each section.">
             </div>
 
             <div class="mySlides">
-                <img src="images/project_500_book/book2.png" style="width:100%">
+                <img src="images/project_500_book/book2.png" style="width:100%" alt="Title page of section 'Apathy'.">
             </div>
 
             <div class="mySlides">
-                <img src="images/project_500_book/book3.png" style="width:100%">
+                <img src="images/project_500_book/book3.png" style="width:100%" alt="Journal entry used in the section.">
             </div>
 
             <div class="mySlides">
-                <img src="images/project_500_book/book4.png" style="width:100%">
+                <img src="images/project_500_book/book4.png" style="width:100%" alt="Preview of flipbook part.">
             </div>
 
             <div class="mySlides">
-                <img src="images/project_500_book/book5.png" style="width:100%">
+                <img src="images/project_500_book/book5.png" style="width:100%" alt="What a page in the flipbook looks like. Image made of different text characters.">
             </div>
+            
             <div style="display: flex; flex-direction: row; justify-content: center;">
                 <button class="slide-button" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="slide-button" onclick="plusDivs(1)">&#10095;</button>
             </div>
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentDiv(1)"></span>
+                <span class="dot" onclick="currentDiv(2)"></span>
+                <span class="dot" onclick="currentDiv(3)"></span>
+                <span class="dot" onclick="currentDiv(4)"></span>
+                <span class="dot" onclick="currentDiv(5)"></span>
+            </div>
         </div>
         <div class="sidepage-column">
             <p class="title-section">The World</p>
-            <p class="section">A 500 page book created with the theme of being major attributes of what makes a villain
-                truly villain. Tragic villains are something I always found more interesting than heroes as a child and
-                is something I wanted to explore in this project. The book has seven different sections involving a
-                different attribute to describe a villain. Throughout the book, the reader follows the main character in
-                an apocalyptic world who slowly turns into a villain as a small decision which could have developed the
-                character into a hero slowly turns the character into what is considered a tragic villain. Each of these
-                decisions is then displayed by a flipbook element with scenes from major movies which had been converted
-                into text using OCR to fit the theme of the apocalyptic world.</p>
+            <p class="subtitle">2022 | Book Design, Narrative Development | Tools: InDesign, Photoshop, Image-to-Text Generator</p>
+            <p class="section">This 500-page book dives into what makes a villain, focusing on tragedy over heroism. It follows a character in an apocalyptic world whose small choice—one that would have set them down the path of a hero—leads them on a dark, tragic course. Each turning point is paired with a flipbook element made from iconic movie scenes. I converted these images into text using an image-to-text generator, reinforcing the book’s distressed, apocalyptic style while exploring the influence of technology on our future.</p>
         </div>
     </div>
 
-    <div class="copyright">© 2024 Ryan Daughtry. All Rights Reserved.</div>
+    <div class="footer no-hover">
+        <div class="footer-column">
+            <p class="footer-title">Contact Me</p>
+            <p class="footer-text">804-944-4777</p>
+            <p class="footer-text email">redaughtry@verizon.net</p>
+            <div class="footer-row">
+                <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin" style="margin: 1px;">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+                <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                    <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                </a>
+                <a href="C:\Users\redau\OneDrive\Desktop\portfolio\index.html" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                    <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">Location</p>
+            <p class="footer-text">Richmond, VA 23227</p>
+            <p class="footer-text">Available for remote work</p>
+            <p class="footer-text">Open to relocation</p>
+        </div>
+        <div class="footer-column">
+            <p class="footer-title">Quick Links</p>
+            <p class="footer-text"><a href="index.html#work">Portfolio</a></p>
+            <p class="footer-text"><a href="index.html#skills">Skills</a></p>
+            <p class="footer-text"><a href="index.html#about">About</a></p>
+            <p class="footer-text"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
     <script>
         function scrollToSection(id) {
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
@@ -72,15 +131,31 @@
             showDivs(slideIndex += n);
         }
 
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
         function showDivs(n) {
             var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-            x[slideIndex - 1].style.display = "block";
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active-dot");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].classList.add("active-dot");
+        }
+
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('open');
         }
     </script>
 </body>

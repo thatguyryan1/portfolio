@@ -7,56 +7,248 @@
         <link rel="icon" type="image/x-icon" href="images/favicon.png"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://use.typekit.net/hai0fhn.css">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id="top"></div>
         <div class="nav">
-            <div class="nav-title"><a href="index.html"><span class="red">RED</span>AUGHTRY.com</a></div>
+            <div class="nav-title">
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Portfolio logo spells RED.">
+                    <img src="images/logo-alt.png" class="logo-alt" alt="Red hover effect image of logo.">
+                </a>
+                <div class="nav-divider"></div>
+                <p class="nav-location">Home</p>
+                <p class="nav-message">Graphic & Web Designer</p>
+            </div>
             <div class="nav-links">
+                <div class="nav-but" onclick="scrollToSection('work')">Portfolio</div>
+                <div class="nav-but" onclick="scrollToSection('skills')">Skills</div>
                 <div class="nav-but" onclick="scrollToSection('about')">About</div>
-                <div class="nav-but" onclick="scrollToSection('work')">Work</div>
-                <div class="nav-but" onclick="scrollToSection('contact')">Contact</div>
+                <a class="nav-but" href="contact.html" style="margin-right: 15px;">Contact</a>
+                <div class="nav-divider divider-social"></div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin">
+                        <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                    </a>
+                    <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                        <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                    </a>
+                    <a href="https://www.instagram.com/daughtryweb/" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                        <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                ☰
             </div>
         </div>
-        <div id="about" class="row" style="width: 60vw;">
+        
+        <img src="images/background.jpg" style="margin-top: 70px;" alt="Temp">
+        <div id="work" class="row">
+            <div class="column fly2-trigger recent-section">
+                <p class="title-recent">Latest Work</p>
+                <p class="recent">I independently designed and developed a WordPress website for a veterinary client, including a new logo and full brand identity. The site was fully responsive, optimized for mobile devices, and built with multiple design iterations guided by client feedback, resulting in a polished final product.</p>
+                <div class="rec-row">
+                    <a href="https://4strongpawsvetrehab.com/"><div class="rec-but primary">View Website</div></a>
+                    <a href="4strongpaws.html"><div class="rec-but secondary">Project Page</div></a>
+                </div>
+            </div>
+            <div class="column fly-trigger" style="width: 300px;">
+                <a href="4strongpaws.html"><img src="images/frontpage/vet-logo.png" class="rec-img" alt="Latest project, 4Strong Paws' new logo."></a>
+            </div>
+        </div>
+
+        <!--------- Work Grid ------->
+
+        <!--
+        <div class="row" style="width: 60vw; margin-top: 50px; padding-top: 0px;">
             <div class="column">
+                <p class="title-work">Work</p>
+            </div>
+        </div>
+        -->
+        <div class="row portfolio" style="padding-top: 0; margin-bottom: 100px;">
+            <div class="column">
+                <div class="project-block">
+                    <a href="4strongpaws.html" class="grid-hyperlink"><img class="grid-img" src="images/project_vet/vet_thumbnail.png" alt="4Strong Paws project preview"></a>
+                    <p class="block-title">4Strong Paws</p>
+                    <p class="block-sub">2025</p>
+                </div>
+                <div class="project-block">
+                    <a href="clock.html" class="grid-hyperlink"><img class="grid-img" src="images/project_clock/clock_thumbnail.png" alt="Clock project preview"></a>
+                    <p class="block-title">Clock</p>
+                    <p class="block-sub">2023</p>
+                </div>
+                <div class="project-block">
+                    <a href="theworld.html" class="grid-hyperlink"><img class="grid-img" src="images/project_500_book/book_thumbnail.png" alt="The World project preview"></a>
+                    <p class="block-title">The World</p>
+                    <p class="block-sub">2022</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="project-block">
+                    <a href="forgotten.html" class="grid-hyperlink"><img class="grid-img" src="images/project_game/game4.png" alt="Forgotten project preview"></a>
+                    <p class="block-title">Forgotten</p>
+                    <p class="block-sub">2024</p>
+                </div>
+                <div class="project-block">
+                    <a href="cn-classics.html" class="grid-hyperlink"><img class="grid-img" src="images/project_vhs/vhs_thumbnail.png" alt="CN Classics project preview"></a>
+                    <p class="block-title">CN Classics</p>
+                    <p class="block-sub">2023</p>
+                </div>
+                <div class="project-block">
+                    <a href="simera-festival.html" class="grid-hyperlink"><img class="grid-img" src="images/project_poster/poster_thumbnail.png" alt="Simera Festival project preview"></a>
+                    <p class="block-title">Simera Festival</p>
+                    <p class="block-sub">2023</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="project-block">
+                    <a href="openhouse.html" class="grid-hyperlink"><img class="grid-img" src="images/project_open_house/house_thumbnail.png" alt="Open House project preview"></a>
+                    <p class="block-title">Open House</p>
+                    <p class="block-sub">2024</p>
+                </div>
+                <div class="project-block">
+                    <a href="anthropocene.html" class="grid-hyperlink"><img class="grid-img" src="images/project_anthropocene/anthropocene_thumbnail.png" alt="Anthropocene project preview"></a>
+                    <p class="block-title">Anthropocene</p>
+                    <p class="block-sub">2022</p>
+                </div>
+                <div class="project-block">
+                    <a href="lyricvideo.html" class="grid-hyperlink"><img class="grid-img" src="images/project_lyric_video/video_thumbnail.png" alt="Lyric Video project preview"></a>
+                    <p class="block-title">Lyric Video</p>
+                    <p class="block-sub">2021</p>
+                </div>
+            </div>
+        </div>
+
+        <!--------- Skills ------->
+
+        <div id="skills" class="container">
+            <div class="column">
+                <p class="title-skills">Skills</p>
+                <div class="skills-main-row">
+
+                    <!-- Left Set -->
+                    <div class="skills-set">
+                        <div class="skills-row">
+                            <img src="images/frontpage/adobe.png" class="skill-img" alt="Adobe Suite Logo">
+                            <p class="skills">Adobe Suite</p>
+                        </div>
+                        <div class="skills-row">
+                            <img src="images/frontpage/html.png" class="skill-img" alt="HTML Logo">
+                            <p class="skills">HTML</p>
+                        </div>
+                    </div>
+
+                    <!-- Left Middle Set -->
+                    <div class="skills-set">
+                        <div class="skills-row">
+                            <img src="images/frontpage/office.png" class="skill-img" alt="Microsoft Office Logo">
+                            <p class="skills">Microsoft Office</p>
+                        </div>
+                        <div class="skills-row">
+                            <img src="images/frontpage/css.png" class="skill-img" alt="CSS Logo">
+                            <p class="skills">CSS</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Middle Set -->
+                    <div class="skills-set">
+                        <div class="skills-row">
+                            <img src="images/frontpage/javascript.png" class="skill-img" alt="Javascript Logo">
+                            <p class="skills">Javascript</p>
+                        </div>
+                        <div class="skills-row">
+                            <img src="images/frontpage/java.png" class="skill-img" alt="Java Logo">
+                            <p class="skills">Java</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Set -->
+                    <div class="skills-set">
+                        <div class="skills-row">
+                            <img src="images/frontpage/json.png" class="skill-img" alt="JSON Logo">
+                            <p class="skills">JSON</p>
+                        </div>
+                        <div class="skills-row">
+                            <img src="images/frontpage/photography.png" class="skill-img" alt="Image of Camera">
+                            <p class="skills">Photography</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--------- About ------->
+        <div id="about" class="about-row">
+            <img src="images/frontpage/me.png" class="fly2-trigger about-img" alt="Photo of myself in black and white wearing a white t-shirt.">
+            <div class="column fly-trigger">
                 <p class="title-about">About Me</p>
-                <p class="about">Hi, I am Ryan Daughtry, a recent graduate from Virginia Commonwealth University. I graduated with a major on fine arts focusing in graphic design and a minor in computer science. Feel free to check out my projects from the past couple of years below or connect with me through linkedin.</p>
+                <p class="about">Hi, I’m Ryan Daughtry — a recent graduate from Virginia Commonwealth University with a BFA in Graphic Design and a minor in Computer Science. I focus on creating bold, thoughtful visual work that blends art and technology. You’ve seen some of my recent projects above — feel free to connect with me on LinkedIn or reach out regarding job opportunities.</p>
             </div>
         </div>
-        <div class="row" style="width: 60vw; margin-top: 8px; padding-top: 0px;">
-            <div class="column">
-                <p class="title-work" id="work" >Work</p>
+
+        <div class="navfooter" onclick="scrollToSection('top')">Back to top</div>
+        <div class="footer">
+            <div class="footer-column">
+                <p class="footer-title">Contact Me</p>
+                <p class="footer-text">804-944-4777</p>
+                <p class="footer-text email">redaughtry@verizon.net</p>
+                <div class="footer-row">
+                    <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/" target="_blank" class="linkedin-link" title="Connect with me on Linkedin" style="margin: 1px;">
+                        <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                    </a>
+                    <a href="https://profile.indeed.com/p/ryand-vhhrynv" target="_blank" class="linkedin-link" title="Connect with me on Indeed">
+                        <img src="images/indeed.png" alt="Indeed" class="linkedin-icon">
+                    </a>
+                    <a href="C:\Users\redau\OneDrive\Desktop\portfolio\index.html" target="_blank" class="linkedin-link" title="Follow me on Instagram">
+                        <img src="images/instagram.png" alt="Instagram" class="linkedin-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <p class="footer-title">Location</p>
+                <p class="footer-text">Richmond, VA 23227</p>
+                <p class="footer-text">Available for remote work</p>
+                <p class="footer-text">Open to relocation</p>
+            </div>
+            <div class="footer-column">
+                <p class="footer-title">Quick Links</p>
+                <p class="footer-text"><a href="#work">Portfolio</a></p>
+                <p class="footer-text"><a href="#skills">Skills</a></p>
+                <p class="footer-text"><a href="#about">About</a></p>
+                <p class="footer-text"><a href="contact.html">Contact</a></p>
             </div>
         </div>
-        <div class="row" style="padding-top: 0;">
-            <div class="column">
-                <a href="forgotten.html" class="grid-hyperlink"><img class="grid-img" src="images/project_game/game4.png" alt="Project Image"></a>
-                <a href="experiments.html" class="grid-hyperlink"><img class="grid-img" src="images/project_jquery_exp/exp_thumbnail.png" alt="Project Image"></a>
-                <a href="theworld.html" class="grid-hyperlink"><img class="grid-img" src="images/project_500_book/book_thumbnail.png" alt="Project Image"></a>
-            </div>
-            <div class="column">
-                <a href="openhouse.html" class="grid-hyperlink"><img class="grid-img" src="images/project_open_house/house_thumbnail.png" alt="Project Image"></a>
-                <a href="vhs.html" class="grid-hyperlink"><img class="grid-img" src="images/project_vhs/vhs_thumbnail.png" alt="Project Image"></a>
-                <a href="poster.html" class="grid-hyperlink"><img class="grid-img" src="images/project_poster/poster_thumbnail.png" alt="Project Image"></a>
-            </div>
-            <div class="column">
-                <a href="clock.html" class="grid-hyperlink"><img class="grid-img" src="images/project_clock/clock_thumbnail.png" alt="Project Image"></a>
-                <a href="anthropocene.html" class="grid-hyperlink"><img class="grid-img" src="images/project_anthropocene/anthropocene_thumbnail.png" alt="Project Image"></a>
-                <a href="lyricvideo.html" class="grid-hyperlink"><img class="grid-img" src="images/project_lyric_video/video_thumbnail.png" alt="Project Image"></a>
-            </div>
-        </div>
-        <div id="contact" class="row" style="width: 50vw;">
-            <div class="column">
-                <p class="title-contact">Reach out to Me if you have any questions</p>
-                <p class="contact" style="margin: 0px;">redaughtry@verizon.net</p>
-                <a href="https://www.linkedin.com/in/ryan-daughtry-3b76b9315/"><img src="images/linkedin.png" alt="LinkedIn Icon" class="linkedin"></a>
-            </div>
-        </div>
-        <div class="copyright">© 2024 Ryan Daughtry. All Rights Reserved.</div>
         <script>
             function scrollToSection(id) {
                 document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (entry.target.classList.contains('fly-trigger')) {
+                            entry.target.classList.add('fly');
+                        } else if (entry.target.classList.contains('fly2-trigger')) {
+                            entry.target.classList.add('fly2');
+                        }
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+
+            document.querySelectorAll('.fly-trigger, .fly2-trigger').forEach(el => {
+                observer.observe(el);
+            });
+            
+            function toggleMenu() {
+                document.querySelector('.nav-links').classList.toggle('open');
             }
         </script>
     </body>
